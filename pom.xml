@@ -54,7 +54,27 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		<!-- Dependencias añadidas manualmente -->
+		
+	
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.12</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	
+
+
 	</dependencies>
+	
+	
+	
+
+	
+	<!-- Preestablecido -->
 
 	<build>
 		<plugins>
@@ -64,5 +84,10 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	
+	
+	
+	
 
 </project>
