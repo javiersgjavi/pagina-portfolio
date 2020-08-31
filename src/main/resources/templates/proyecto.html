@@ -21,10 +21,10 @@
 <body>
 
       <!--Main Navigation-->
-    <header>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <!--Main Navigation-->
+<!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top scrolling-navbar">
 
             <div class="container">
 
@@ -58,7 +58,7 @@
                             <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/curriculum.pdf}">Currículum</a>
+                            <a class="nav-link" href="https://javiersgjavi.herokuapp.com/curriculum.pdf">Currículum</a>
                         </li>
                     </ul>
                     <!-- Links -->
@@ -78,222 +78,13 @@
             </div>
 
         </nav>
-        <!--/.Navbar-->
-
-        <!--Mask-->
-        <div id="intro" class="view">
-
-            <div class="mask rgba-black-strong">
-
-                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
-                    <div class="row d-flex justify-content-center text-center">
-
-                        <div class="col-md-10">
-
-                            <!-- Heading -->
-                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Javier Solís García</h2>
-
-                            <!-- Divider -->
-                            <hr class="hr-light">
-
-                            <!-- Description -->
-                            <h4 class="white-text my-4">Estudiante de último curso de Ingienería de Software en la Universidad de Sevilla</h4>
-                            <a type="button" class="btn btn-outline-white" href="#best-features">Ver más<i class="fa fa-book ml-2"></i></a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!--/.Mask-->
-
-    </header>
-    <!--Main Navigation-->
-
     <!--Main layout-->
     <main class="mt-5">
         <div class="container">
 
-            <!--Section: Best Features-->
-            <section id="best-features" class="text-center">
-
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Habilidades</h2>
-
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center mb-4">
-
-                    <!--Grid column-->
-                    <div class="col-md-8">
-
-                        <!-- Description -->
-                        <p class="grey-text">Interesado en el ámbito de la Inteligencia Artificial y Machine Learning, Capacidad de liderazgo, trabajo en equipo y continuo aprendizaje, además, de la
-habilidad para dar clase a compañeros de la Escuela Técnica Superior de Ingeniería Informática.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-brain fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Conocimientos</h4>
-                        <p class="grey-text">Python, Java, Keras/TensorFlow, Scikit-Learn, Numpy, Pandas, Matplolib, Spring, GIT.</p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-search fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Formación continua</h4>
-                        <p class="grey-text">Mi interés por este campo me lleva a estar continuamente investigando y realizando cursos online para aumentar mis conocimientos.</p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-heart fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Apasionado</h4>
-                        <p class="grey-text">Actualmente tengo interés en todos los campos relacionados con la Inteligencia Artificial.</p>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
+           
             <!--Section: Best Features-->
 
-            <hr class="my-5">
-
-            <!--Section: Examples-->
-            <section id="examples" class="text-center">
-
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Proyectos realizados</h2>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <a th:href="@{/proyecto?id=1}"><img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div></a>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Proyecto 1</h4>
-                        <p class="grey-text">Proyecto 1</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                            maiores nam,
-                            aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
             <!--Section: Examples-->
 
             <hr class="my-5">
@@ -302,7 +93,7 @@ habilidad para dar clase a compañeros de la Escuela Técnica Superior de Ingeni
             <section id="gallery">
 
                 <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold text-center">Sobre mí</h2>
+                <h2 class="mb-5 font-weight-bold text-center" th:text="${proyecto.title}"></h2>
 
                 <!--Grid row-->
                 <div class="row">
