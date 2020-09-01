@@ -1,13 +1,11 @@
 package pagina.model;
 
-import java.time.LocalDate;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 
-import org.springframework.format.annotation.DateTimeFormat;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -28,15 +26,29 @@ public class Proyecto extends BaseEntity {
 	
 	@Getter
 	@Setter
+	private String conocimientos;
+	
+	@Getter
+	@Setter
 	private String picture;
 	
 	@Getter
 	@Setter
 	private String url;
 	
-	@Column(name = "date")
-	@DateTimeFormat(pattern = "yyyy/MM/dd")
-	private LocalDate	date;
+	@Getter
+	@Setter
+	private String url2;
+	
+	@Getter
+	@Setter
+	private String urld;
+	
+	@Getter
+	@Setter
+	private String urld2;
+	
+	private String	date;
 
 	public String getTitle() {
 		return title;
@@ -52,6 +64,14 @@ public class Proyecto extends BaseEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getConocimientos() {
+		return conocimientos;
+	}
+
+	public void setConocimientos(String conocimientos) {
+		this.conocimientos = conocimientos;
 	}
 
 	public String getPicture() {
@@ -70,13 +90,41 @@ public class Proyecto extends BaseEntity {
 		this.url = url;
 	}
 
-	public LocalDate getDate() {
+	public String getUrl2() {
+		return url2;
+	}
+
+	public void setUrl2(String url2) {
+		this.url2 = url2;
+	}
+
+	public String getUrld() {
+		return urld;
+	}
+
+	public void setUrld(String desUrl) {
+		this.urld = desUrl;
+	}
+
+	public String getUrld2() {
+		return urld2;
+	}
+
+	public void setUrld2(String desUrl2) {
+		this.urld2 = desUrl2;
+	}
+
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(LocalDate date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
+
+	
+	
+	
 	
 	
 

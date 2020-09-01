@@ -10,28 +10,17 @@ CREATE TABLE IF NOT EXISTS user (
   UNIQUE KEY UK_sb8bbouer5wak8vyiiy4pf2bx (username)
 ) ENGINE=InnoDB;
 
-CREATE TABLE IF NOT EXISTS role(
-  id int(4) NOT NULL AUTO_INCREMENT,
-  name varchar(255) ,
-  description varchar(255) ,
-  PRIMARY KEY (id)
-) ENGINE=InnoDB;
-
-CREATE TABLE IF NOT EXISTS user_roles (
-  user_id bigint(20) NOT NULL,
-  role_id bigint(20) NOT NULL,
-  PRIMARY KEY (user_id,role_id),
-  KEY FKrhfovtciq1l558cw6udg0h0d3 (role_id),
-  CONSTRAINT FK55itppkw3i07do3h7qoclqd4k FOREIGN KEY (user_id) REFERENCES user (id),
-  CONSTRAINT FKrhfovtciq1l558cw6udg0h0d3 FOREIGN KEY (role_id) REFERENCES role (id)
-) ENGINE=InnoDB;
 
 CREATE TABLE IF NOT EXISTS proyecto (
   id int(11) NOT NULL AUTO_INCREMENT,
-  date DATE ,
-  description varchar(255) ,
+  date varchar(255) ,
+  description LONGBLOB ,
   picture varchar(255) ,
   title varchar(255) ,
   url varchar(255) ,
+  url2 varchar(255) ,
+  urld varchar(255) ,
+  urld2 varchar(255) ,
+  conocimientos varchar(255) ,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB;
