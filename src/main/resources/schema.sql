@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS user_role;
+DROP TABLE IF EXISTS role;
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS proyecto;
+
 CREATE TABLE IF NOT EXISTS user (
   id int(4) NOT NULL AUTO_INCREMENT,
   email varchar(255) ,
