@@ -43,22 +43,22 @@
                     <!-- Links -->
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/#intro}">Inicio</a>
+                            <a class="nav-link" href="#intro">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/#habilities}">Habilidades</a>
+                            <a class="nav-link" href="#best-features">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/#examples}">Ejemplos</a>
+                            <a class="nav-link" href="#examples">Ejemplos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/#about_me}">Sobre mí</a>
+                            <a class="nav-link" href="#gallery">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/#contact}">Contacto</a>
+                            <a class="nav-link" href="#contact">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" th:href="@{/curriculum.pdf}">Currículum</a>
+                            <a class="nav-link" href="https://javiersgjavi.herokuapp.com/curriculum.pdf">Currículum</a>
                         </li>
                     </ul>
                     <!-- Links -->
@@ -106,20 +106,29 @@
                             <!--Indicators-->
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                                
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
                             </ol>
                             <!--/.Indicators-->
                             <!--Slides-->
-                           <div class="carousel-inner z-depth-1-half" role="listbox">
+                            <div class="carousel-inner z-depth-1-half" role="listbox">
                                 <!--First slide-->
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" th:src="${proyecto.picture}"  
+                                    <img class="d-block w-100" th:src="@{/img/yo1.png}"
                                         alt="First slide">
                                 </div>
-                                <!--/First slide      th:src="${proyecto.picture}"-->
-                                <!--Second slide th:src="@{/img/red_neuronal_p1.png}"-->
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" th:src="@{/img/yo2.jpg}"
+                                        alt="Second slide">
+                                </div>
                                 <!--/Second slide-->
                                 <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" th:src="@{/img/yo3.png}"
+                                        alt="Third slide">
+                                </div>
                                 <!--/Third slide-->
                             </div>
                             <!--/.Slides-->
@@ -143,21 +152,21 @@
                     <div class="col-md-6">
 
                         <!--Excerpt-->
-                        <a th:href="${proyecto.url}" class="teal-text">
-                            <h6 class="pb-1"><i class="fa fa-link"></i><strong  th:text="${proyecto.urld}"> </strong></h6>
+                        <a href="" class="teal-text">
+                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Mi estilo de vida </strong></h6>
                         </a>
+                        <h4 class="mb-3"><strong>Este soy yo</strong></h4>
                         
-                        <a th:if="${proyecto.url2!=null}" th:href="${proyecto.url2}" class="teal-text">
-                            <h6 class="pb-1"><i class="fa fa-link"></i><strong  th:text="${proyecto.urld2}"> </strong></h6>
-                        </a>
-                        <h4 class="mb-3"><strong>Conocimientos: </strong></h4>  <h5 class="mb-3" ><strong th:text="${proyecto.conocimientos}"></strong></h5>
+                        <p>Soy una persona capaz de trabajar en equipo y con habilidad para adaptarme.</p>
                         
-                        <p th:text="${proyecto.description}"></p>
+                        <p>Me encanta estar haciendo proyectos continuamente y estar investigando, aunque también tengo otros hobbies como el cine, la lectura, los videojuegos o el buceo.</p>
+
+                        <p>Actualmente me encuentro trabajando en el desarrollo de mi trabajo de Fin de Grado, además de seguir trabajando en aumentar mis conocimientos paralelamente a la universidad.</p>
                         
+                        <p>Tengo carnet de conducir y vehículo propio.</p>
                         
-                         <p><strong>Fecha:</strong> <h7 th:text="${proyecto.date}"></h7></p>
-                        
-                        <a class="btn btn-primary btn-md"  th:href="@{/#examples}">Volver</a>
+                        <p> <a><strong>Javier Solís García</strong></a>, 29/08/2020</p>
+                        <a class="btn btn-primary btn-md" href="https://javiersgjavi.herokuapp.com/curriculum.pdf">Ver currículum</a>
 
                     </div>
                     <!--Grid column-->
